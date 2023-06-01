@@ -1,0 +1,19 @@
+#include"Myalloc.h"
+#include<vector>
+#include<iostream>
+
+using namespace std;
+int main()
+{
+    int ia[5]={1,2,3,4,5};
+    unsigned int i;
+
+    vector<int,Strforexc::allocator<int>>iv(ia,ia+5);
+
+    for(int i=0;i<iv.size();i++)
+    {
+
+        cout << iv[i] << ";";
+    }
+    cout << endl;
+}
